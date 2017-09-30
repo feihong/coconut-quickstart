@@ -1,10 +1,13 @@
-import subprocess
-subprocess.call('coconut --quiet src build', shell=True)
+import sys
 
+# Build the coconut source.
+import coconut.main
+sys.argv = ['coconut', '--quiet', 'src', 'build']
+coconut.main.main()
 
 from invoke import Collection
-import sys
 sys.path.append('build')
+# Import Python modules built by Coconut compiler.
 import main, docs, web
 
 

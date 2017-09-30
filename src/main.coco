@@ -3,9 +3,11 @@ from invoke import task
 
 @task
 def download_stuff(ctx):
+  "Download some cool content"
   print('Download stuff...')
 
 
 @task
 def make_widget(ctx):
+  "Construct widgets of excellent quality"
   print('Make widget...')
