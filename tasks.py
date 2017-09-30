@@ -6,8 +6,9 @@ sys.argv = ['coconut', '--quiet', 'src', 'build']
 coconut.main.main()
 
 from invoke import Collection
-sys.path.append('build')
+
 # Import Python modules built by Coconut compiler.
+sys.path.append('build')
 import main, docs, web
 
 
