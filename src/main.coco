@@ -1,0 +1,11 @@
+from invoke import task
+
+
+@task
+def download_stuff(ctx):
+  print('Download stuff...')
+
+
+@task
+def make_widget(ctx):
+  print('Make widget...')

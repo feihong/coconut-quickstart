@@ -1,0 +1,11 @@
+from invoke import task
+
+
+@task
+def build(ctx):
+  print('Building documentation...')
+
+
+@task
+def publish(ctx):
+  print('Publishing documentation...')

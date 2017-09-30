@@ -1,2 +1,8 @@
-# coconut-quickstart
-Feihong's Coconut quickstart
+# Feihong's Coconut Quickstart
+
+## Installation
+
+```
+mkvirtualenv -p python3 coconut
+pip install -r requirements.txt
+```
