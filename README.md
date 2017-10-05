@@ -3,6 +3,12 @@
 ## Installation
 
 ```
-mkvirtualenv -p python3 coconut
-pip install -r requirements.txt
+pipenv install
+```
+
+## List tasks
+
+```
+pipenv shell
+inv -l
 ```
