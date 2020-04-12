@@ -18,15 +18,15 @@ pip3 install coconut jupyter
 
 Install coconut kernel
 
-    python install_coconut_kernerl.py
+    python install_coconut_kernel.py
 
 Note: If you run `coconut --jupyter`, it will install the kernel globally instead of just inside the virtualenv.
 
 ## Commands
 
-Start jupyter notebook that uses Coconut kernel
+Open notebook in jupyter notebook
 
-    coconut --jupyter notebook
+    jupyter notebook notebooks/hello.ipynb
 
 ## Links
 
