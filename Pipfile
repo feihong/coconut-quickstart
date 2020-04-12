@@ -6,5 +6,6 @@ name = "pypi"
 [packages]
 yattag = "*"
 coconut = "*"
+jupyter = "*"
 
 [dev-packages]
