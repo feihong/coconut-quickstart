@@ -18,9 +18,9 @@ pip3 install coconut jupyter
 
 Install coconut kernel
 
-    coconut --jupyter
+    python install_coconut_kernerl.py
 
-Note: I suspect the way this is done might not work well if you have another virtualenv that uses coconut, but not sure yet
+Note: If you run `coconut --jupyter`, it will install the kernel globally instead of just inside the virtualenv.
 
 ## Commands
 
