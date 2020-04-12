@@ -2,13 +2,24 @@
 
 ## Installation
 
+Prerequisites
+
 ```
-pipenv install
+brew install python
+pip3 install jupyter
 ```
 
-## List tasks
+Install coconut via pipenv
 
 ```
 pipenv shell
-inv -l
+pip3 install coconut
 ```
+
+## Commands
+
+Start jupyter notebook that uses Coconut kernel
+
+    coconut --jupyter notebook
+
+## Links
