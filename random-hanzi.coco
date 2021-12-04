@@ -1,0 +1,24 @@
+import sys
+import random
+
+class Maybe
+data Nothing() from Maybe
+data Just(n) from Maybe
+
+def try_fmap(fn, obj):
+  try:
+    return fmap(fn, obj)
+  except:
+    return Nothing()
+
+def default(value, Nothing()) = value
+addpattern def default(_, Just(value)) = value
+
+# Use = instead of : and you don't need to write `return`
+def random_hanzis(n: Int) =
+  (random.randint(0x4e00, 0x9fff) |> chr for _ in range(n))
+
+count = (if len(sys.argv) >= 2 then Just(sys.argv[1]) else None) |> try_fmap$(int) |> default$(24)
+
+for i in range(1, count+1):
+  print(' '.join(random_hanzis(i)))

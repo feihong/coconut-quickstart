@@ -5,24 +5,17 @@
 Prerequisites
 
 ```
-brew install python
-pip3 install jupyter
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+# Update ~/.profile and ~/.bashrc according to instructions, then logout and login
+
+pip install --user --requirement requirements.txt
 ```
-
-Install coconut and jupyter via pipenv
-
-```
-pipenv shell
-pip3 install coconut jupyter
-```
-
-Install coconut kernel
-
-    python install_coconut_kernel.py
-
-Note: If you run `coconut --jupyter`, it will install the kernel globally instead of just inside the virtualenv.
 
 ## Commands
+
+Run script
+
+    coconut-run random-hanzi.coco
 
 Open notebook in jupyter notebook
 
